@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+   
+</head>
+<body>
+    <header class="block-wrapper">
+        <h1>KEPYKLA</h1>
+    </header>
+    <div class="info-wrapper block-wrapper">
+        <h2>Pradine informacija</h2>
+        <div class="input-wrapper">
+            <label for="employee-count">Darboutoju skaicius</label>
+            <input type="number" id="employee-count" min="0" step="1" placeholder="RASYTI CIA">
+            <span class="error">Darbuotoju skaicius negali buti neigiamas.</span>
+        </div>
+        <div class="input-wrapper">
+            <label for="loaves-per-employee">Duonos kepalu per diena(vienas darbuotojas)</label>
+            <input type="number" id="loaves-per-employee" min="0" step="1" placeholder="RASYTI CIA">
+            <span class="error">Duonos skaicius negali buti neigiamas.</span>
+        </div>
+        <div class="input-wrapper">
+            <label for="order-count">Uzsakymo kiekis:</label>
+            <input type="number" id="order-count" min="0" step="1" placeholder="RASYTI CIA">
+            <span class="error">Uzsakymo skaicius negali buti neigiamas.</span>
+        </div>
+        <button id="calculate">Skaiciuoti</button>
+        <button id="reset">Is naujo</button>
+    </div>
+    <div class="calc-wrapper block-wrapper">
+        <h2>Skaiciavimai</h2>
+        <div id="results">
+            <p>Kol kas nieko nera</p>
+        </div>
+    </div>
+</body>
+</html>
